@@ -69,7 +69,8 @@ FoodApp.config(function($stateProvider, $urlRouterProvider) {
         }
       }
     })
- .state('app.menus', {
+ .state('app.menus', 
+        {
     parent: 'app',
     url: '/menus/:id',
     views: {
