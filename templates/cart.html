@@ -1,0 +1,31 @@
+<ion-view view-title="Your Cart">
+    <ion-content>
+        <div class="cate-lv2">
+            <div class="card cate-lv2-item" ng-repeat="product in selectedProducts">
+                <div class="item item-thumbnail-left item-text-wrap">
+                    <img ng-src="img/{{ product.image }}" width="100px" height="100px">
+
+
+                    <h2>{{product.name}}</h2>
+                    <div class="product-info">
+                        <div class="price">₹{{product.price}}</div>
+                        <p>x</p>
+                        <input type="text" disabled class="input-quantity" placeholder="" value="{{product.quantity}}" />
+                        <a class="product-delete"><i class="ion-android-delete" data-ng-click="deleteCheckout(product)"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total-prices">
+            <strong>Total</strong>
+            <span>₹{{totalPrice}}</span>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="btn-checkout">
+            <button class="button button-block button-positive" data-ng-click="submitOrder()">
+                Submit Order
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

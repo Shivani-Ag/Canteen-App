@@ -1,0 +1,42 @@
+[
+    { 
+        "id": 1, 
+        "name": "Mukteshawari Canteen",  
+        "image": "1.jpg", 
+        "desp": "Available :09:00 AM-10:00PM",
+        "tag": "Delicious Food. To fit your lifestyle.",
+        "rating": "r1.jpg"
+    },
+    { 
+        "id": 2, 
+        "name": "Shanu's Cafe",          
+        "image": "2.jpg", 
+        "desp": "Available :07:00 AM-12:00PM" ,
+        "tag": "Good food… Good feelings.",
+        "rating": "r2.jpg"
+    },
+    { 
+        "id": 3, 
+        "name": "Spice Bite Canteen",    
+        "image": "3.jpg", 
+        "desp": "Available :24 hours",
+        "tag": "Fresh. Fast. Tasty.",
+        "rating": "r3.jpg"
+    },
+    { 
+        "id": 4, 
+        "name": "Agrawal Canteen",       
+        "image": "4.jpg", 
+        "desp": "Available :12:00 PM-10:00PM",
+        "tag": "When you’re here, you’re Family.",
+        "rating": "r4.jpg"
+    },
+    { 
+        "id": 5, 
+        "name": "Eats Canteen",          
+        "image": "2.jpg", 
+        "desp": "Available :24 Hours",
+        "tag": "Where the food’s the star.",
+        "rating": "r5.jpg"
+    }
+]
