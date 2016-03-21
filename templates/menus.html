@@ -11,11 +11,14 @@
              style="font-family: sans-serif;font-size:18px"
              class="full-width">
     </ion-header-bar>
+    
   <ion-content has-header="true" padding="true">
     <div class="row unlimited-items"> 
     <div class="col" ng-repeat="product in products | filter :search ">
             <img ng-src="img/{{ product.image }}" width="100px" height="100px">
+        
             <div><h4>{{ product.name }}</h4>
+                
             <h5 style="color:blue">₹ {{ product.price}}</h5></div>
            
                 

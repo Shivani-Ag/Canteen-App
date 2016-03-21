@@ -135,6 +135,7 @@ FoodApp.factory('Data', function () {
 
       $scope.deleteCheckout = function(product)
       {
+           $rootScope.totalPrice = $rootScope.totalPrice - ((($rootScope.selectedProducts[product.id]).quantity)*            (($rootScope.selectedProducts[product.id]).price));
          delete $rootScope.selectedProducts[product.id];
          $rootScope.noOfSelectedProducts = Object.keys($rootScope.selectedProducts).length;
       };
