@@ -7,6 +7,7 @@
 
 
                     <h2>{{product.name}}</h2>
+                    <h2>{{product.cantid}}</h2>
                     <div class="product-info">
                         <div class="price">₹{{product.price}}</div>
                         <p>x</p>
@@ -22,10 +23,19 @@
             <div class="clearfix"></div>
         </div>
 
-        <div class="btn-checkout">
-            <button class="button button-block button-positive" data-ng-click="submitOrder()">
-                Submit Order
-            </button>
+       <div class="btn-checkout">
+         <a ng-if="totalPrice" href="#/app/address"><button class="button button-block button-calm"  ng-click="submitFunction()">
+                Confirm Order
+            </button></a>
+           
+      <!--  <input type="button" class="button button-block button-calm"  ng-click="submitFunction(product)">Confirm Order-->
+            <div class="clearfix"></div>
+            <div ng-if="!totalPrice" class="emptyCart">
+            <p style="color:red"> Your Cart is empty , please select some item from menu</p>
+            <a href="index.html" onClick="window.location.reload();"><button class="button button-block button-dark">
+                Go To Home Page
+            </button></a>
+                </div>
         </div>
     </ion-content>
 </ion-view>

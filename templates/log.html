@@ -1,0 +1,22 @@
+<ion-view view-title="Login">
+    <ion-content>
+        <div class="clearfix"></div>
+    
+  <form action="fetch.php" method="post">
+  <label class="item item-input">
+    <span class="input-label">Username</span>
+    <input type="email" name="customer_email" placeholder="Email-Id" ng-model="useremail" required="" />
+       <br />
+      <div ng-messages="form.$submitted || form.customer_email.$touched"></div>
+  </label>
+  <label class="item item-input">
+    <span class="input-label">Password</span>
+    <input type="password" name="customer_password" placeholder="Password" ng-model="userpassword" required="" />
+  </label>
+  <input class="button button-block button-positive" type="submit" name="submit" value="Login">
+   <!-- <a class="button button-block button-positive" href="#log" ng-click="submitFunction()">Login </a>-->
+    <a class="button icon-right ion-chevron-right button-calm" href="#/app/register">Register</a>
+    <a class="button icon-right ion-chevron-right button-calm" href="#forgot">Forgot Password</a>
+    </form>
+    </ion-content>
+</ion-view>

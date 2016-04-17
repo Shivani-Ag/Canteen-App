@@ -26,14 +26,6 @@ angular.module('FoodApp.controllers', [])
   };
 })
 
-.controller('homeCtrl', function($scope,$http) {
-  
-  $http.get('json/canteen.json',{}).success(function(data){
-			$scope.cants = data;
-   
-		});
-  
-})
 
 
 

@@ -1,34 +1,11 @@
 <ion-view view-title="FoodApp">
-     
-     <ion-header-bar class="bar-light bar-subheader">
-      <input type="search"
-             placeholder="Search Canteen..."
-             ng-model="search"
-             ng-focus="searchFocused = true"
-             ng-blur="searchFocused = false"
-             ng-change="scrollTop()"
-             style="font-family: sans-serif;font-size:18px"
-             class="full-width">
-    </ion-header-bar>
-       <ion-content>
+    <ion-content>
+        <div class="clearfix margin-20"></div>
 
-      <div class="list item">
-
-        <a ng-repeat="cant in cants | filter :search" href="#/app/menus/{{cant.id}}" class="item item-thumbnail-left">
-
-          <img ng-src="img/canteen/{{ cant.image }}">
-          <b>{{ cant.name }}</b>
-            <p>{{ cant.tag }}</p>
-            <br />
-            <h4>{{ cant.desp }}</h4>
-            <div class=" test"><img ng-src="img/{{ cant.rating }}"></div>
-            
-            
-           
-         
-        </a>
-
-      </div>
-
-    </ion-content>
-</ion-view>
+     <center><img src = "img/back2.jpg ">
+       <br />
+    <a href= "#/app/log">I am a Canteen Owner</a>
+       <br />
+    <a href="#/app/first" >I am a customer</a></center>
+</ion-content>
+    </ion-view>

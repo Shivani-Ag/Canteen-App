@@ -33,3 +33,15 @@ h3 span {font-size:14px; display:block !important;}
 span[ng-click] {
         cursor: pointer !important;
     }
+
+.margin-10{
+    margin-top: 10% !important;
+  
+}
+
+.margin-20{
+    margin-top: 20% !important;
+  
+}
+
+input.input-box { background: #FFFFCC !important}

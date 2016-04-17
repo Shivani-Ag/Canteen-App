@@ -1,0 +1,162 @@
+
+
+<ion-view view-title="Contact Details">
+    <ion-content>
+        <div class="clearfix"></div>
+       <h5 class="enterDetailsHeading">Please Enter Your Details</h5>
+            <form name="userForm">
+  <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label mandatory">Name</span>
+    <input type="text" placeholder="Enter Name ..." name="userName" required ng-model="details.name">
+    </label>
+      
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Email</span>
+    <input type="text" placeholder="Enter Your Email .." name="userEmail" ng-model="details.email">
+  </label>
+    
+    <label class="item item-input item-stacked-label">
+    <span class="input-label mandatory">Mobile No.</span>
+    <input type="tel" placeholder="Enter Phone Number" name="userPhone" required ng-model="details.phoneNumber">
+     </label>
+    
+      <label class="item item-input item-stacked-label">
+        <span class="input-label mandatory">Address</span>
+          <textarea placeholder="Enter Address.." name="userAddress" required ng-model="details.address"></textarea>
+  </label>
+</div>
+        <p style="font-size: 74%;text-align: center;">All * Fields are Mendatory </p>
+        <p ng-if="error" style="color:red;text-align:center">{{error}}</p>
+        <button class="button button-block button-balanced" data-ng-click="submitOrder()">
+                SUBMIT ORDER
+            </button>
+</form>
+    </ion-content>
+</ion-view>
+
+<!--<ion-view view-title="Contact Details">
+    <ion-content>
+        <div class="clearfix"></div>
+       <h5><center>Please Enter Your Details</center></h5>
+<form name="userForm">
+  <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label mandatory">Name</span>
+    <input type="text" placeholder="Enter Name ..." name="userName" required ng-model="details.name">
+    </label>
+      
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Email</span>
+    <input type="email" placeholder="Enter Your Email .." name="userEmail" ng-model="details.email">
+       <br />
+      <div ng-messages="form.$submitted || form.userEmail.$touched"></div>
+  </label>
+    
+    <label class="item item-input item-stacked-label">
+    <span class="input-label mandatory">Mobile No.</span>
+    <input type="tel" placeholder="Enter Phone Number" name="userPhone" required ng-model="details.phoneNumber">
+     </label>
+    
+      <label class="item item-input item-stacked-label">
+        <span class="input-label mandatory">Address</span>
+          <textarea placeholder="Enter Address.." name="userAddress" required ng-model="details.address"></textarea>
+  </label>
+</div>
+        <p style="font-size: 74%;text-align: center;">All * Fields are Mendatory </p>
+        <p ng-if="error" style="color:red;text-align:center">{{error}}</p>
+        <button class="button button-block button-calm" data-ng-click="submitOrder()">
+                SUBMIT ORDER
+            </button>
+</form>
+    </ion-content>
+</ion-view>
+
+
+<ion-view view-title="Contact Details">
+    <ion-content>
+        <div class="clearfix"></div>
+       <h5><center>Please Enter Your Details</center></h5>
+<form action="register.php" method="post">
+
+  <label class="item item-input">
+    <span class="input-label">Name :</span>
+    <input type="text" ng-model="usname" placeholder="User Name" name="uName" required="" />
+    <div ng-messages="form.uName.$error">
+ 
+</div>
+  </label>
+           
+  <label class="item item-input">
+    <span class="input-label">Email-ID :</span>
+    <input type="email" ng-model="usemail" placeholder="Email-Id" name="uEmail" required="" />
+    <br />
+    <div ng-messages="form.$submitted || form.uEmail.$touched">
+
+    </div>
+  </label>
+    
+    
+  <label class="item item-input">
+    <span class="input-label">Password :</span>
+    <input type="password" ng-model="uspassword" placeholder="Your Password" name="uPassword" required="" />
+    <br />
+ 
+  </label>
+           
+           
+  <label class="item item-input">
+    <span class="input-label">Age :</span>
+    <input type="text" ng-model="usage" placeholder="Your Age" name="uAge" required="" />
+    <br />
+
+            
+  </label>
+
+    <input class="button button-block button-positive" type="submit" name="submit" value="Register">
+    
+   
+        </form>   
+        </ion-content>
+</ion-view>
+   
+
+
+<!--<div class="margin-8">
+  <form name="form">
+      <h1>Sign-Up</h1>
+      <label for="age">Name:</label>
+    <input type="text" ng-model="usname" placeholder="User Name" name="uName" required="" />
+    <br />
+    <div ng-show="form.$submitted || form.uName.$touched">
+        <div ng-show="form.uName.$error.required"> Tell us your name.</div>
+    </div>
+
+      <label for="age">E-mail:</label>
+    <input type="email" ng-model="usemail" placeholder="Email-Id" name="uEmail" required="" />
+    <br />
+    <div ng-show="form.$submitted || form.uEmail.$touched">
+      <span ng-show="form.uEmail.$error.required">Tell us your email.</span>
+      <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>
+        
+    </div>
+
+     <label for="age">Age:</label>
+          <input type="text" ng-model="usage" placeholder="Your Age" name="uAge" required="" />
+    <br />
+    <div ng-show="form.$submitted || form.uAge.$touched">
+        <div ng-show="form.uAge.$error.required"> Tell us your age.</div>
+    </div>
+            
+          <label for="password">Password:</label>
+         <input type="password" ng-model="uspassword" placeholder="Your Password" name="uPassword" required="" />
+    <br />
+    <div ng-show="form.$submitted || form.uPassword.$touched">
+        <div ng-show="form.uPassword.$error.required"> Tell us your Password.</div>
+    </div>
+          
+          
+       <center> <a class="button button-calm" href="#signup" ng-disabled="form.$invalid || form.$pending ng-click="submitFunction1()">Sign Up </a></center>
+</form>
+</div> -->
+           

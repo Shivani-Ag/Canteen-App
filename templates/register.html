@@ -1,0 +1,64 @@
+<ion-view view-title="Register Yourself">
+    <ion-content>
+        <div class="clearfix list"></div>
+<form action="register.php" method="post"> 
+    
+     <label class="item item-input">
+    <span class="input-label">Canteen ID :</span>
+    <input type="text" ng-model="uID" placeholder="Enter Canteen ID" name="uID" required="" />
+    <div ng-messages="form.uName.$error">
+ 
+</div>
+  </label>
+    
+     <label class="item item-input">
+    <span class="input-label">Password :</span>
+    <input type="password" ng-model="uPassword" placeholder="Enter Password" name="uPassword" required="" />
+    <br />
+ 
+  </label>
+    
+  <label class="item item-input">
+    <span class="input-label">Canteen Name :</span>
+    <input type="text" ng-model="uName" placeholder="Enter Canteen Name" name="uName" required="" />
+    <div ng-messages="form.uName.$error">
+ 
+</div>
+  </label>
+    
+     <label class="item item-input">
+    <span class="input-label">Owner Name :</span>
+    <input type="text" ng-model="uOwner" placeholder="Enter Canteen Owner Name" name="uOwner" required="" />
+    <div ng-messages="form.uName.$error">
+ 
+</div>
+  </label>
+           
+  <label class="item item-input">
+    <span class="input-label">Owner Email-ID :</span>
+    <input type="email" ng-model="uEmail" placeholder="Enter Email-Id" name="uEmail" required="" />
+    <br />
+    <div ng-messages="form.$submitted || form.uEmail.$touched">
+
+    </div>
+  </label>
+ <label class="item item-input">
+    <span class="input-label">Canteen Address :</span>
+    <input type="text" ng-model="uAddress" placeholder="Enter Canteen Address" name="uAddress" required="" />
+    <br />
+
+            
+  </label>
+    
+    <label class="item item-input">
+    <span class="input-label">Canteen Phone no :</span>
+    <input type="text" ng-model="uPhone" placeholder="Enter Canteen Phone no" name="uPhone" required="" />
+    <br />
+
+            
+  </label>
+
+    <input class="button button-block button-positive" type="submit" value="Confirm Order">
+      </form>   
+    </ion-content>
+</ion-view>

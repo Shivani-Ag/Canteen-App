@@ -19,11 +19,12 @@
         
             <div><h4>{{ product.name }}</h4>
                 
-            <h5 style="color:blue">₹ {{ product.price}}</h5></div>
-           
                 
-            <input type="number" name="quantity" id="no" ng-model = "product.quantity" value="" placeholder="0" min="1" max="100" />
-             <button class="button button-block button-positive" data-ng-click="changeQuantity(product)">{{ myText }}</button>
+            <h5 style="color:green">₹ {{ product.price}}</h5></div>
+           
+            Enter Quantity :-  
+            <input type="text" class="input-box" name="quantity" id="no" ng-model = "product.quantity" />
+             <button class="button button-block button-positive" value=" "   data-ng-click="changeQuantity(product)">Add To Cart</button>
             
         <hr />   
     </div>
